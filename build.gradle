@@ -9,14 +9,11 @@ repositories {
 }
 
 dependencies {
-
     implementation project(":common-gdx-api-sqlite")
-
+// remove 2 lines below if used in the project
     compileOnly files('libs/gdx.jar')
     compileOnly files('libs/gdx-sources.jar')
-
-    testImplementation platform('org.junit:junit-bom:5.9.1')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-
+// un-remark to use these in the project
+//    implementation "com.badlogicgames.gdx:gdx:$gdxVersion"
 }
 
