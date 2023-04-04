@@ -3,13 +3,17 @@ plugins {
 }
 
 group = 'com.badlogic.gdx.sqlite'
-version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    implementation project(":common-gdx-api-sqlite")
+
+    compileOnly files('libs/gdx.jar')
+    compileOnly files('libs/gdx-sources.jar')
+
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
