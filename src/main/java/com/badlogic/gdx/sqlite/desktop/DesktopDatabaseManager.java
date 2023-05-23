@@ -96,7 +96,7 @@ public class DesktopDatabaseManager implements DatabaseManager {
             DesktopCursor lCursor = new DesktopCursor();
             try {
                 ResultSet resultSetRef = stmt.executeQuery(sql);
-                System.out.println("BEFORE SET :"+resultSetRef.toString());
+//                System.out.println("BEFORE SET :"+resultSetRef.toString());
                 lCursor.setNativeCursor(resultSetRef);
                 return lCursor;
             } catch (SQLException e) {
